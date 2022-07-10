@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+  <!--font-->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+  <h1>Wordpress Rest API</h1>
+  <input type="text" class="urlSite" placeholder="Enter made in Wordpress site link ">
+  <br>
+  <button type="button" class="traerInfo" placeholder="">Bring website</button>
+  <article id="site" class="site"></article>
+  <section id="posts" class="posts"></section>
+  <img src="./img/ball-triangle.svg" class="loader" alt="Cargando">
+  
+  <template id="post-template">
+    <article class="post">
+      <img src="" alt="">  <!--Imagen del post-->     
+      <aside>
+        <h2 class="post-title"><!-- Titulo del Post--></h2>
+        <figure class="post-author"><!-- dentro de un figcaption aqui ira la imagen junto con el Autor--></figure>
+        <small class="post-date"><!-- Fecha del Post--></small>
+        <a class="post-link" target="_blank">Ver Publicacion Original</a>
+        <p class="post-excerpt"></p>          <!-- estracto de texto de cada articulo -->
+        <div class="post-categories"></div>     <!-- categorias del Post-->
+        <div class="post-tags"></div>           <!-- etiquetas del Post-->
+      
+        <details class="post-content">
+          <summary>Ver contenido de la publicacion</summary>          <!-- contenido de cada articulo-->
+          <article></article>
+        </details> 
+        
+      </aside>
+    </article>
+    <hr>                                                      <!-- divide donde termina cada post -->
+  </template>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
